@@ -1,0 +1,86 @@
+.shop-cart-breadcrumb a{
+  text-decoration: none;
+  color: gray;
+}
+.shop-cart-content .item-content a{
+  text-decoration: none;
+  color: gray;
+}
+.shop-cart-content li {
+  border: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 25px;
+}
+.shop-cart-content ul {
+  border: none;
+  /* padding: 25px; */
+  border-radius: 0;
+}
+.shop-cart-content .card {
+  border: none;
+  width: 100%;
+}
+.shop-cart-content .card li{
+  border: none;
+  padding: 25px;
+  border-bottom: 1px solid #ddd;
+  background-color: #F5F5F5;
+}
+.shop-cart-content .proceed {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+.btn {
+  border-radius: 0;
+}
+.shop-cart-content .proceed a {
+  color: white!important;
+}
+.shop-cart-content .item-content {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.shop-cart-content .form-group input {
+  border-radius: 0;
+  border: 1px solid #ddd;
+  box-shadow: none;
+}
+.shop-cart-content .form-group input:hover {
+  border-radius: 0;
+  /* border: none; */
+  box-shadow: none;
+
+}
+.shop-cart-content .form-select{
+  border-radius: 0;
+  border: 1px solid black;
+  box-shadow: none;
+}
+.shop-cart-content .form-select:hover{
+  box-shadow: none;
+  /* border: none; */
+
+}
+.shopping button {
+  padding: 13px 24px;
+}
+.shopping input {
+  padding: 13px 20px;
+}
+
+.shopping .continue i {
+  transition: all 0.5s;
+}
+
+.shopping .continue:hover i {
+  transform: translateX(-5px)
+}
+.shopping .size {
+  font-size: 15px;
+}
+.shopping .size .form-select {
+  padding: 3px 40px 3px 8px;
+  border: 1px solid #ddd;
+}

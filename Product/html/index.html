@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product</title>
+  <link rel="stylesheet" href="../../Common/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../Common/css/all.min.css" />
+  <link rel="stylesheet" href="../../Common/css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <section class="top bg-dark">
+      <div class="text-center text-white">
+        <span class="happy text-uppercase">⚡️ Happy Holiday Deals on Everything ⚡️</span>
+      </div>
+    </section>
+    <nav class="navbar navbar-expand-xl">
+      <div class="container">
+        <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../../Home/html/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../Product/html/index.html">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../About/html/index.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../Member/html/index.html">Member</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Docs</a>
+            </li>
+          </ul>
+          <a class="logo mx-8"  href="../../Home/html/index.html">Vascara</a>
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">United States
+                <i class="fa-solid fa-angle-down"></i>
+              </a>
+              <div class="dropdown-menu">
+                <div class="card">
+                  <div class="card-body">
+                    <ul class="list-group">
+                      <li class="list-group-item"><a href="#">United States</a></li>
+                      <li class="list-group-item"><a href="#">Canada</a></li>
+                      <li class="list-group-item"><a href="#">Germany</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link border-left dropdown-toggle" data-bs-toggle="dropdown" href="#">USD
+                <i class="fa-solid fa-angle-down"></i>
+              </a>
+              <div class="dropdown-menu">
+                <div class="card">
+                  <div class="card-body">
+                    <ul class="list-group">
+                      <li class="list-group-item"><a href="#">USD</a></li>
+                      <li class="list-group-item"><a href="#">EUR</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link border-left dropdown-toggle" data-bs-toggle="dropdown" href="#">EN
+                <i class="fa-solid fa-angle-down"></i>
+              </a>
+              <div class="dropdown-menu">
+                <div class="card">
+                  <div class="card-body">
+                    <ul class="list-group">
+                      <li class="list-group-item"><a href="#">English</a></li>
+                      <li class="list-group-item"><a href="#">French</a></li>
+                      <li class="list-group-item"><a href="#">German</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link nav-pad" data-bs-toggle="offcanvas" href="#search"><i class="fa-solid fa-magnifying-glass m-0"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-pad" href="../../Information/html/index.html"><i class="fa-regular fa-user"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-pad" data-bs-toggle="offcanvas" href="#wishList">
+                <span id="wishh" class="position-relative" data-wish="0">
+                  <i class="fa-regular fa-heart"></i>
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-pad" data-bs-toggle="offcanvas" href="../../Cart/html/index.html">
+                <span id="cart" class="position-relative" data-cart="0">
+                  <i class="fa-solid fa-cart-shopping m-0"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- End Header -->
+
+  <!-- Content -->
+  <section class="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#category-two" >
+                  Season
+                </button>
+              </h2>
+              <div id="category-two" class="accordion-collapse collapse show">
+                <div class="group accordion-body" data-group="season">
+                  <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input me-3" id="check32" type="checkbox">
+                    <label class="form-check-label" for="check32">Summer</label>
+                  </div>
+                  <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input me-3" id="check33" type="checkbox">
+                    <label class="form-check-label" for="check33">Winter</label>
+                  </div>
+                  <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input me-3" id="check34" type="checkbox">
+                    <label class="form-check-label" for="check34">Spring & Autumn</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#category-three" >
+                  Size
+                </button>
+              </h2>
+              <div id="category-three" class="accordion-collapse collapse show">
+                <div class="group accordion-body" data-group="size">
+                  <div class="form-check form-check-inline  ps-0 m-0">
+                    <input type="checkbox" class="form-check-input" name="options-base" id="size11" autocomplete="off" >
+                    <label class="size-input btn" for="size11">3XS</label>
+                  </div>
+                  <div class="form-check form-check-inline  ps-0 m-0">
+                    <input type="checkbox" class="form-check-input" name="options-base" id="size12" autocomplete="off" disabled>
+                    <label class="size-input through btn" for="size12">2XS</label>
+                  </div>
+                  <div class="form-check form-check-inline  ps-0 m-0">
+                    <input type="checkbox" class="form-check-input" name="options-base" id="size13" autocomplete="off">
+                    <label class="size-input btn" for="size13">XS</label>
+                  </div>
+                  <div class="form-check form-check-inline  ps-0 m-0">
+                    <input type="checkbox" class="form-check-input" name="options-base" id="size14" autocomplete="off">
+                    <label class="size-input btn" for="size14">S</label>
+                  </div>
+                  <div class="form-check form-check-inline  ps-0 m-0">
+                    <input type="checkbox" class="form-check-input" name="options-base" id="size15" autocomplete="off">
+                    <label class="size-input btn" for="size15">M</label>
+                  </div>
+                  <div class="form-check form-check-inline  ps-0 m-0">
+                    <input type="checkbox" class="form-check-input" name="options-base" id="size16" autocomplete="off">
+                    <label class="size-input btn" for="size16">L</label>
+                  </div>
+                  <div class="form-check form-check-inline  ps-0 m-0">
+                    <input type="checkbox" class="form-check-input" name="options-base" id="size17" autocomplete="off">
+                    <label class="size-input btn" for="size17">XL</label>
+                  </div>
+                  <div class="form-check form-check-inline  ps-0 m-0">
+                    <input type="checkbox" class="form-check-input" name="options-base" id="size18" autocomplete="off" disabled>
+                    <label class="size-input through btn" for="size18">2XL</label>
+                  </div>
+                  <div class="form-check form-check-inline  ps-0 m-0">
+                    <input type="checkbox" class="form-check-input" name="options-base" id="size19" autocomplete="off">
+                    <label class="size-input btn" for="size19">3XL</label>
+                  </div>
+                  <div class="form-check form-check-inline ps-0 m-0">
+                    <input type="checkbox" class="form-check-input" name="options-base" id="size20" autocomplete="off">
+                    <label class="size-input btn" for="size20">4XL</label>
+                  </div>
+                  <div class="form-check form-check-inline ps-0 m-0">
+                    <input type="checkbox" class="form-check-input" name="options-base" id="size21" autocomplete="off">
+                    <label class="size-input btn" for="size21">One Size</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#category-four" >
+                  Color
+                </button>
+              </h2>
+              <div id="category-four" class="accordion-collapse collapse show">
+                <div class="group accordion-body" data-group="color">
+                  <div class="form-check">
+                    <input class="form-check-input me-3" id="color1" type="checkbox" style="background-color: black; border-radius: 50%;">
+                    <label class="form-check-label" for="color1">Black</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input me-3" id="color2" type="checkbox" style="background-color: #f9f9f9; border-radius: 50%;">
+                    <label class="form-check-label" for="color2">White</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input me-3" id="color3" type="checkbox" style="background-color: #3b86ff; border-radius: 50%;">
+                    <label class="form-check-label" for="color3">Blue</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input me-3" id="color4" type="checkbox" style="background-color: rgb(37, 140, 37); border-radius: 50%;">
+                    <label class="form-check-label" for="color4">Green</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input me-3" id="color5" type="checkbox" style="background-color: #795548; border-radius: 50%;">
+                    <label class="form-check-label" for="color5">Brown</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input me-3" id="color6" type="checkbox" style="background-color: #bababa; border-radius: 50%;">
+                    <label class="form-check-label" for="color6">Grey</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input me-3" id="color7" type="checkbox" style="background-color: rgb(255, 255, 1); border-radius: 50%;">
+                    <label class="form-check-label" for="color7">Yellow</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input me-3" id="color8" type="checkbox" style="background-color: rgb(240, 162, 175); border-radius: 50%;">
+                    <label class="form-check-label" for="color8">Pink</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input me-3" id="color9" type="checkbox" style="background-color: rgb(191, 45, 191); border-radius: 50%;">
+                    <label class="form-check-label" for="color9">Purple</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#category-five" >
+                  Brand
+                </button>
+              </h2>
+              <div id="category-five" class="accordion-collapse collapse show">
+                <div class="group accordion-body" data-group="brand">
+                  <div class="form-check">
+                    <input class="form-check-input me-3" id="check39" type="checkbox">
+                    <label class="form-check-label" for="check39">Balmain</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input me-3" id="check40" type="checkbox">
+                    <label class="form-check-label" for="check40">Burberry</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input me-3" id="check41" type="checkbox">
+                    <label class="form-check-label" for="check41">Chloe</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input me-3" id="check42" type="checkbox">
+                    <label class="form-check-label" for="check42">Kenzo</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input me-3" id="check43" type="checkbox">
+                    <label class="form-check-label" for="check43">Givenchy</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#category-six" >
+                  Price
+                </button>
+              </h2>
+              <div id="category-six" class="accordion-collapse collapse show">
+                <div class="group accordion-body" data-group="price">
+                  <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input me-3" id="check50" data-from="10" data-to="49" type="checkbox">
+                    <label class="form-check-label" for="check50">$10.00 - $49.00</label>
+                  </div>
+                  <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input me-3" id="check51" data-from="50" data-to="99" type="checkbox">
+                    <label class="form-check-label" for="check51">$50.00 - $99.00</label>
+                  </div>
+                  <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input me-3" id="check52" data-from="100" data-to="199" type="checkbox">
+                    <label class="form-check-label" for="check52">$100.00 - $199.00</label>
+                  </div>
+                  <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input me-3" id="check53" data-from="200" data-to="1000" type="checkbox">
+                    <label class="form-check-label" for="check53">$200.00 and Up</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12">
+          <div class="slider-product">
+            <div class="item3">
+              <div class="row align-items-center">
+                <div class="col-12 p-0">
+                  <div class="inner-item">
+                    <h3 class="title">ENJOY AN EXTRA</h3>
+                    <h1 class="sale">50% OFF</h1>
+                    <div>
+                      <button class="button">Shop Collection</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row my-4">
+          </div>
+          <div class="row" id="product-list">
+            <div class="col-xl-4 col-lg-4 col-md-6">
+              <a class="item" href="../../ProductDetail/html/index.html">
+                <div class="image">
+                  <img src="../img/p1.jpg" class="image-front w-100" alt="">
+                  <div class="action">
+                    <button class="action-item"><i class="fa-regular fa-eye"></i></button>
+                    <button class="action-item"><i class="fa-solid fa-cart-shopping"></i></button>
+                    <button class="action-item"><i class="fa-regular fa-heart"></i></button>
+                  </div>
+                </div>
+                <p class="cate">Dresses</p>
+                <p class="name">Cotton floral print Dress</p>
+                <p class="price">
+                  <span class="price-only">$40.00</span>
+                </p>
+              </a>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6">
+              <a class="item" href="../../ProductDetail/html/index.html">
+                <div class="image">
+                  <img src="../img/p2.jpg" class="image-front w-100" alt="">
+                  <div class="action">
+                    <button class="action-item"><i class="fa-regular fa-eye"></i></button>
+                    <button class="action-item"><i class="fa-solid fa-cart-shopping"></i></button>
+                    <button class="action-item"><i class="fa-regular fa-heart"></i></button>
+                  </div>
+                </div>
+                <p class="cate">Dresses</p>
+                <p class="name">Cotton floral print Dress</p>
+                <p class="price">
+                  <span class="price-only">$40.00</span>
+                </p>
+              </a>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6">
+              <a class="item" href="../../ProductDetail/html/index.html">
+                <div class="image">
+                  <img src="../img/p3.jpg" class="image-front w-100" alt="">
+                  <div class="action">
+                    <button class="action-item"><i class="fa-regular fa-eye"></i></button>
+                    <button class="action-item"><i class="fa-solid fa-cart-shopping"></i></button>
+                    <button class="action-item"><i class="fa-regular fa-heart"></i></button>
+                  </div>
+                </div>
+                <p class="cate">Dresses</p>
+                <p class="name">Cotton floral print Dress</p>
+                <p class="price">
+                  <span class="price-only">$40.00</span>
+                </p>
+              </a>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6">
+              <a class="item" href="../../ProductDetail/html/index.html">
+                <div class="image">
+                  <img src="../img/p4.jpg" class="image-front w-100" alt="">
+                  <div class="action">
+                    <button class="action-item"><i class="fa-regular fa-eye"></i></button>
+                    <button class="action-item"><i class="fa-solid fa-cart-shopping"></i></button>
+                    <button class="action-item"><i class="fa-regular fa-heart"></i></button>
+                  </div>
+                </div>
+                <p class="cate">Dresses</p>
+                <p class="name">Cotton floral print Dress</p>
+                <p class="price">
+                  <span class="price-only">$40.00</span>
+                </p>
+              </a>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6">
+              <a class="item" href="../../ProductDetail/html/index.html">
+                <div class="image">
+                  <img src="../img/p5.jpg" class="image-front w-100" alt="">
+                  <div class="action">
+                    <button class="action-item"><i class="fa-regular fa-eye"></i></button>
+                    <button class="action-item"><i class="fa-solid fa-cart-shopping"></i></button>
+                    <button class="action-item"><i class="fa-regular fa-heart"></i></button>
+                  </div>
+                </div>
+                <p class="cate">Dresses</p>
+                <p class="name">Cotton floral print Dress</p>
+                <p class="price">
+                  <span class="price-only">$40.00</span>
+                </p>
+              </a>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6">
+              <a class="item" href="../../ProductDetail/html/index.html">
+                <div class="image">
+                  <img src="../img/p6.jpg" class="image-front w-100" alt="">
+                  <div class="action">
+                    <button class="action-item"><i class="fa-regular fa-eye"></i></button>
+                    <button class="action-item"><i class="fa-solid fa-cart-shopping"></i></button>
+                    <button class="action-item"><i class="fa-regular fa-heart"></i></button>
+                  </div>
+                </div>
+                <p class="cate">Dresses</p>
+                <p class="name">Cotton floral print Dress</p>
+                <p class="price">
+                  <span class="price-only">$40.00</span>
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Content -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="infor">
+      <div class="container">
+        <div class="row justify-content-center" style="margin-bottom: 80px;">
+          <div class="col-xl-10 col-lg-8 col-md-6 cold-sm-12 col-12  d-flex justify-content-center flex-column align-items-center">
+            <h1 class="mail">Wants style Ideas and Treats?</h1>
+            <div class="row">
+              <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12 mb-3">
+                <input type="text" class="w-100" placeholder="Enter Email *">
+              </div>
+              <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
+                <button class="w-100">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 mb-5">
+            <h3 class="name">Shopper</h3>
+            <div class="social">
+              <span class="item"><i class="fa-brands fa-facebook-f"></i></span>
+              <span class="item"><i class="fa-brands fa-youtube"></i></span>
+              <span class="item"><i class="fa-brands fa-twitter"></i></span>
+              <span class="item"><i class="fa-brands fa-instagram"></i></span>
+              <span class="item"><i class="fa-brands fa-medium"></i></span>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-6 mb-4">
+            <h3 class="title">SUPPORT</h3>
+            <ul>
+              <li>Contact Us</li>
+              <li>FAQs</li>
+              <li>Size Guide</li>
+              <li>Shipping & Returns</li>
+            </ul>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-6 mb-4">
+            <h3 class="title">SHOP</h3>
+            <ul>
+              <li>Men's Shopping</li>
+              <li>Women's Shopping</li>
+              <li>Kid's Shopping</li>
+              <li>Discounts</li>
+            </ul>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-6">
+            <h3 class="title">COMPANY</h3>
+            <ul>
+              <li>Our Story</li>
+              <li>Careers</li>
+              <li>Terms & Conditions</li>
+              <li>Privacy & Cookie policy</li>
+            </ul>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-6">
+            <h3 class="title">CONTACT</h3>
+            <ul>
+              <li>1-202-555-0105</li>
+              <li>1-202-555-0106</li>
+              <li>help@shopper.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="payment">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-between">
+            <p>© 2019 All rights reserved. Designed by Unvab.</p>
+            <div class="list">
+              <span class="card-item"><img src="../img/card-1.svg" alt=""></span>
+              <span class="card-item"><img src="../img/card-2.svg" alt=""></span>
+              <span class="card-item"><img src="../img/card-3.svg" alt=""></span>
+              <span class="card-item"><img src="../img/card-4.svg" alt=""></span>
+              <span class="card-item"><img src="../img/card-5.svg" alt=""></span>
+              <span class="card-item"><img src="../img/card-6.svg" alt=""></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+  
+
+
+  <script src="../../Common/js/bootstrap.bundle.min.js"></script>
+  <script src="../../Common/js/jquery.min.js"></script>
+  <script src="../../Common/js/jquery-1.11.0.min.js"></script>
+  <script src="../../Common/js/jquery-migrate-1.2.1.min.js"></script>
+  <script src="../../Common/js/redirect.js"></script>
+</body>
+</html>

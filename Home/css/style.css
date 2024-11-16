@@ -1,0 +1,181 @@
+
+.button {
+  background-color: #1C1C1C;
+  color: #ffffff;
+  font-weight: 500;
+  border: 0;
+  padding: 14px 28px;
+}
+.button i {
+  font-size: 14px;
+  transition: all 0.4s;
+}
+.button:hover.button i{
+  transform: translateX(5px);
+}
+.slide .item{
+  padding: 100px 0;
+  height: 550px;
+  background-size: cover;
+  background-position: center;
+}
+.slide .item.item-three {
+  background-image: url(../img/banner-4.jpg);
+}
+.slide .item.item-three .inner-item {
+  color: #ffffff;
+}
+.slide .item.item-three .inner-item .title{
+  font-size: 28px;
+}
+.slide .item.item-three .inner-item .sale {
+  font-size: 110px;
+}
+
+/* Sec-one */
+.sec-one {
+  margin: 20px 0;
+}
+.sec-one .item {
+  padding: 30px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.sec-one .item:hover.item .button i {
+  transform: translateX(5px);
+} 
+.sec-one .item .title {
+  font-size: 28px;
+}
+.sec-one .item .button {
+  background-color: transparent;
+  color: #1F1F1F;
+  padding: 0;
+}
+.sec-one .item.item-one {
+  background-image: url(../img/sec-one-1.jpg);
+}
+.sec-one .item.item-two {
+  background-image: url(../img/sec-one-2.jpg);
+}
+.sec-one .item.item-three {
+  background-image: url(../img/sec-one-3.jpg);
+}
+/* End Sec-one */
+
+
+/* Sec-three */
+.sec-three {
+  margin: 80px 0;
+}
+.sec-three .item {
+  position: relative;
+}
+.sec-three .item .sale{
+  width: 100px;
+  height: 100px;
+  background-color: #ff6f61;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 50%;
+  color: #ffffff;
+  font-weight: 500;
+  position: absolute;
+  top: 3%;
+  right: 3%;
+}
+.sec-three .item .sale .new {
+  font-size: 20px;
+}
+.sec-three .item .sale .old {
+  font-size: 14px;
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+.sec-three .item .mid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 32px;
+  background-color: #ffffff;
+  margin-top: -80px;
+  position: relative;
+  z-index: 1;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.sec-three .item .mid:hover.mid .button i{
+  transform: translateX(5px);
+}
+.sec-three .item .mid h2 {
+  margin: 0;
+  font-size: 26px;
+}
+.sec-three .item .mid .bottom .button {
+  background-color: transparent;
+  color: #000000;
+}
+
+/* End Sec-three */
+
+
+/* Sec-six */
+.sec-six {
+  background-color: #f5f5f5;
+  padding: 100px 0;
+}
+.sec-six .sub-title {
+  font-size: 13px;
+  color: #A6A6A6;
+  font-weight: 500;
+  text-align: center;
+}
+.sec-six .title {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.sec-six .item .image img {
+  width: 100%;
+}
+.sec-six .item .footer {
+  background-color: #ffffff;
+  padding: 32px 40px;
+}
+.sec-six .item .footer .time {
+  font-size: 14px;
+  color: #767474;
+}
+.sec-six .item .footer .content {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 0;
+  line-height: 25px;
+  color: black;
+}
+.sec-six .item {
+  transition: all 0.4s;
+}
+.sec-six .item:hover{
+  transform: translateY(-5px);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+@media screen and (max-width: 768px) {
+  .sec-six .title {
+    font-size: 30px;
+  }
+}
+/* End Sec-six */
+

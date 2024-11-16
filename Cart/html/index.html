@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="../../Common/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../Common/css/all.min.css" />
+  <link rel="stylesheet" href="../../Common/css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <section class="top bg-dark">
+      <div class="text-center text-white">
+        <span class="happy text-uppercase">⚡️ Happy Holiday Deals on Everything ⚡️</span>
+      </div>
+    </section>
+    <nav class="navbar navbar-expand-xl">
+      <div class="container">
+        <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../../Home/html/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../Product/html/index.html">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../About/html/index.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../Member/html/index.html">Member</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Docs</a>
+            </li>
+          </ul>
+          <a class="logo mx-8"  href="../../Home/html/index.html">Vascara</a>
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">United States
+                <i class="fa-solid fa-angle-down"></i>
+              </a>
+              <div class="dropdown-menu">
+                <div class="card">
+                  <div class="card-body">
+                    <ul class="list-group">
+                      <li class="list-group-item"><a href="#">United States</a></li>
+                      <li class="list-group-item"><a href="#">Canada</a></li>
+                      <li class="list-group-item"><a href="#">Germany</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link border-left dropdown-toggle" data-bs-toggle="dropdown" href="#">USD
+                <i class="fa-solid fa-angle-down"></i>
+              </a>
+              <div class="dropdown-menu">
+                <div class="card">
+                  <div class="card-body">
+                    <ul class="list-group">
+                      <li class="list-group-item"><a href="#">USD</a></li>
+                      <li class="list-group-item"><a href="#">EUR</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link border-left dropdown-toggle" data-bs-toggle="dropdown" href="#">EN
+                <i class="fa-solid fa-angle-down"></i>
+              </a>
+              <div class="dropdown-menu">
+                <div class="card">
+                  <div class="card-body">
+                    <ul class="list-group">
+                      <li class="list-group-item"><a href="#">English</a></li>
+                      <li class="list-group-item"><a href="#">French</a></li>
+                      <li class="list-group-item"><a href="#">German</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link nav-pad" data-bs-toggle="offcanvas" href="#search"><i class="fa-solid fa-magnifying-glass m-0"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-pad" href="../../Information/html/index.html"><i class="fa-regular fa-user"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-pad" data-bs-toggle="offcanvas" href="#wishList">
+                <span id="wishh" class="position-relative" data-wish="0">
+                  <i class="fa-regular fa-heart"></i>
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-pad" data-bs-toggle="offcanvas" href="../../Cart/html/index.html">
+                <span id="cart" class="position-relative" data-cart="0">
+                  <i class="fa-solid fa-cart-shopping m-0"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- End Header -->
+  
+  <div class="shopping">
+    <nav class="shop-cart-breadcrumb " style="--bs-breadcrumb-divider: '>';" style="padding-top: 20px; padding-bottom: 20px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <ol class="breadcrumb mb-0 fs-xs">
+              <li class="breadcrumb-item">
+                <a href="#" class="text-gray-400">Home</a>
+              </li>
+              <li class="breadcrumb-item active">
+                <a href="shopping-cart" class="text-gray-400">Shopping Cart</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Breadcrumb -->
+
+    <!-- Content -->
+    <section class="shop-cart-content d-flex" style="padding-top: 32px; padding-bottom: 96px;">
+      <div class="container">
+        <!-- Tittle Content -->
+        <div class="row">
+          <div class="col-12">
+            <h3 class=" text-center" style="font-size: 32px; margin-bottom: 64px;">Shopping Cart</h3>
+          </div>
+        </div>
+        <!-- Item Content -->
+        <div class="row" style="justify-content: space-between;">
+          <div class="item-content col-12 col-md-7 mb-5">
+            <ul class="list-group" id="shoppingCart">
+              <li class="list-group-item p-0 pt-4 pb-4">
+                <div class="row" class="align-items-center">
+                  <div class="col-3">
+                    <a href="#">
+                      <img src="../img/p1.jpg" alt="" class="w-100 h-100">
+                    </a>
+                  </div>
+                  <div class="col">
+                    <div class="d-flex mb-2">
+                      <a href="#" style="color: black; font-weight: 500;">Suede cross body Bag</a>
+                      <span class="ms-auto" style="color: black; font-weight: 500;">$49.00</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <div class="size">
+                        <select class="form-select" aria-label="Default select example">
+                          <option value="1" selected>1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                        </select>
+                      </div>
+                      <a href="#" class="fs-xs text-gray-400 ms-auto" style="font-size: 14px;"><i class="fa-solid fa-xmark"></i> Remove</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item p-0 pt-4 pb-4">
+                <div class="row" class="align-items-center">
+                  <div class="col-3">
+                    <a href="#">
+                      <img src="../img/p2.jpg" alt="" class="w-100 h-100">
+                    </a>
+                  </div>
+                  <div class="col">
+                    <div class="d-flex mb-2">
+                      <a href="#" style="color: black; font-weight: 500;">Suede cross body Bag</a>
+                      <span class="ms-auto" style="color: black; font-weight: 500;">$49.00</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <div class="size">
+                        <select class="form-select" aria-label="Default select example">
+                          <option value="1" selected>1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                        </select>
+                      </div>
+                      <a href="#" class="fs-xs text-gray-400 ms-auto" style="font-size: 14px;"><i class="fa-solid fa-xmark"></i> Remove</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="row align-items-end justify-content-between mb-10 mb-md-0 mt-3">
+                <div class="col-12 col-md-7 col-lg-7 col-xl-7 mb-2">
+                    <form action="" class="mb-0 md-mb-0">
+                        <div class="form-group">
+                          <label for="counpon" class="form-label" style="font-weight: 500;color: black;">Coupon Code</label>
+                          <div class="row">
+                            <div class="col">
+                              <input type="text" class="form-control" placeholder="Enter coupon code*">
+                            </div>
+                            <div class="col-auto">
+                              <button class="btn btn-dark">Apply</button>
+                            </div>
+                          </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-md-auto mb-2">
+                    <button class="btn btn-outline-dark">Update Cart</button>
+                </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-5 col-lg-4 d-flex justify-content-center">
+            <div class="card">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item ">
+                  <div class="d-flex" style="justify-content: space-between;">
+                    <p class="m-0">Subtotal</p>
+                    <span class="totalPrice">$89.00</span>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex" style="justify-content: space-between;">
+                    <p class="m-0">Tax</p>
+                    <span class="">$0</span>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex" style="justify-content: space-between;">
+                    <p class="m-0" style="font-weight: 500; color: black;">Total</p>
+                    <span class="subTotal" style="font-weight: 500; color: black;">$89.00</span>
+                  </div>
+                </li>
+                <li class="list-group-item fs-sm text-center text-gray-500 mb-5">Shipping cost calculated at Checkout
+                  *</li>
+              </ul>
+              <a href="../../Checkout/html/index.html" class="btn btn-dark mb-2 py-3 proceed">Proceed to Checkout</a>
+              <a href="../../Product/html/index.html" class="btn btn-link btn-sm px-0 d-flex align-items-center continue"
+                style="text-decoration: none; color: black; font-weight: 500;"><i class="fa-solid fa-arrow-left me-2"></i> Continue
+                Shopping</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="infor">
+      <div class="container">
+        <div class="row" style="margin-bottom: 80px;">
+          <div class="col-12 d-flex justify-content-center flex-column align-items-center">
+            <h1 class="mail">Wants style Ideas and Treats?</h1>
+            <div class="send-mail">
+              <input type="text" placeholder="Enter Email *">
+              <button>Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 mb-5">
+            <h3 class="name">Shopper</h3>
+            <div class="social">
+              <span class="item"><i class="fa-brands fa-facebook-f"></i></span>
+              <span class="item"><i class="fa-brands fa-youtube"></i></span>
+              <span class="item"><i class="fa-brands fa-twitter"></i></span>
+              <span class="item"><i class="fa-brands fa-instagram"></i></span>
+              <span class="item"><i class="fa-brands fa-medium"></i></span>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-6 mb-4">
+            <h3 class="title">SUPPORT</h3>
+            <ul>
+              <li>Contact Us</li>
+              <li>FAQs</li>
+              <li>Size Guide</li>
+              <li>Shipping & Returns</li>
+            </ul>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-6 mb-4">
+            <h3 class="title">SHOP</h3>
+            <ul>
+              <li>Men's Shopping</li>
+              <li>Women's Shopping</li>
+              <li>Kid's Shopping</li>
+              <li>Discounts</li>
+            </ul>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-6">
+            <h3 class="title">COMPANY</h3>
+            <ul>
+              <li>Our Story</li>
+              <li>Careers</li>
+              <li>Terms & Conditions</li>
+              <li>Privacy & Cookie policy</li>
+            </ul>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-6">
+            <h3 class="title">CONTACT</h3>
+            <ul>
+              <li>1-202-555-0105</li>
+              <li>1-202-555-0106</li>
+              <li>help@shopper.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="payment">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-between">
+            <p>© 2019 All rights reserved. Designed by Unvab.</p>
+            <div class="list">
+              <span class="card-item"><img src="../img/card-1.svg" alt=""></span>
+              <span class="card-item"><img src="../img/card-2.svg" alt=""></span>
+              <span class="card-item"><img src="../img/card-3.svg" alt=""></span>
+              <span class="card-item"><img src="../img/card-4.svg" alt=""></span>
+              <span class="card-item"><img src="../img/card-5.svg" alt=""></span>
+              <span class="card-item"><img src="../img/card-6.svg" alt=""></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <script src="../../Common/js/bootstrap.bundle.min.js"></script>
+  <script src="../../Common/js/jquery.min.js"></script>
+  <script src="../../Common/js/jquery-1.11.0.min.js"></script>
+  <script src="../../Common/js/jquery-migrate-1.2.1.min.js"></script>
+  <script src="../../Common/js/redirect.js"></script>
+</body>
+
+</html>
